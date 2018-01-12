@@ -9,10 +9,8 @@
 
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-
     <!-- Optional theme -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     
@@ -24,9 +22,15 @@
 <nav class="navbar navbar-default">
     <div class="container-fluid">
         <div class="navbar-header">
-        <a class="navbar-brand" id="nav-title" href="index.html">Weather By Latitude</a>
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" id="nav-title" href="index.html">Weather By Latitude</a>
         </div>    
-        <div class="collapse navbar-collapse">
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right">                
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Plots <span class="caret"></span></a>
@@ -52,10 +56,12 @@
                 <h1>
                     Summary: Weather By Latitude
                 </h1>
-                <img src="assets/temperature.png" alt="Temperature by Latitude" id="landing-img">
-                <p>
-                    This will be a large volume of cony work! Loremum dolor sit amet consecteture a large volume of content describing my work! Lorem ipsum dolor sit amet consectetur, oftent describing my work! Lorem ipsum dolor sit amet consecteture a large volume of content describing my work! Lorem ipsum dolor sit amet consectetur, of content describing my work! L, of content describing my work! Lorem ipsum dolor sit amet consectetur, adipisici adipisicing elit. Voluptates iusto vitae iure quisquam animi itaque, optio fuga non nequit amet consecteture a large volume of content describing my work! Lorem ipsum dolor sit amet consectetur, oftent describing my work! Lorem ipsum dolor sit amet consecteture a large volume of content describing my work! Lorem ipsum dolor sit amet consectetur, of content describing my work! L, of content describing my work! Lorem ipsum dolor sit amet consectetur, adipisici adipisicing elit. Voluptates iusto vitae iure quisquam a ipsum dolor sit amet consecteture a large volume of content describing my work! Lorem ipsum dolor sit amet consectetur, oftent describing my work! Lorem ipsum dolor sit amet consecteture a large volume of content describing my work! Lorem ipsum dolor sit amet consectetur, of content describing my work! L, of content describing my work! Lorem ipsum dolor sit amet consectetur, adipisici adipisicing elit. Voluptates iusto vitae iure quisquam animi itaque, optio fuga non nequit amet consecteture a large volume of content describing my work! Lorem ipsum dolor sit amet consectetur, oftent describing my work! Lorem ipsum dolor sit amet consecteture a large volume of content describing my work! Lorem ipsum dolor sit amet consectetur, of content describing my work! L, of content describing my work! Lorem ipsum dolor sit amet consectetur, adipisici adipisicing elit. Voluptates iusto vitae iure quisquam animi itaque, optio fuga non neque culpa molestiae in sit harum deleniti perspiciatis minima erre culpa molestiae in sit harum deleniti perspiciatis minima error facere architecto.
-                </p>
+                <div class="main-content">
+                    <img src="assets/temperature.png" alt="Temperature by Latitude" id="landing-img" class="img-responsive">
+                    <p>
+                        This will be a large volume of cony work! Loremum dolor sit amet consecteture a large volume of content describing my work! Lorem ipsum dolor sit amet consectetur, oftent describing my work! Lorem ipsum dolor sit amet consecteture a large volume of content describing my work! Lorem ipsum dolor sit amet consectetur, of content describing my work! L, of content describing my work! Lorem ipsum dolor sit amet consectetur, adipisici adipisicing elit. Voluptates iusto vitae iure quisquam animi itaque, optio fuga non nequit amet consecteture a large volume of content describing my work! Lorem ipsum dolor sit amet consectetur, oftent describing my work! Lorem ipsum dolor sit amet consecteture a large volume of content describing my work! Lorem ipsum dolor sit amet consectetur, of content describing my work! L, of content describing my work! Lorem ipsum dolor sit amet consectetur, adipisici adipisicing elit. Voluptates iusto vitae iure quisquam a ipsum dolor sit amet consecteture a large volume of content describing my work! Lorem ipsum dolor sit amet consectetur, oftent describing my work! Lorem ipsum dolor sit amet consecteture a large volume of content describing my work! Lorem ipsum dolor sit amet consectetur, of content describing my work! L, of content describing my work! Lorem ipsum dolor sit amet consectetur, adipisici adipisicing elit. Voluptates iusto vitae iure quisquam animi itaque, optio fuga non nequit amet consecteture a large volume of content describing my work! Lorem ipsum dolor sit amet consectetur, oftent describing my work! Lorem ipsum dolor sit amet consecteture a large volume of content describing my work! Lorem ipsum dolor sit amet consectetur, of content describing my work! L, of content describing my work! Lorem ipsum dolor sit amet consectetur, adipisici adipisicing elit. Voluptates iusto vitae iure quisquam animi itaque, optio fuga non neque culpa molestiae in sit harum deleniti perspiciatis minima erre culpa molestiae in sit harum deleniti perspiciatis minima error facere architecto.
+                    </p>
+                </div>
             </section>
           </div>
           <div class="col-md-4">
@@ -63,10 +69,10 @@
                 <h1>
                     Visualizations
                 </h1>
-                <img src="assets/temperature.png" alt="Temperature by Latitude" class="img-responsive side-bar-left-img">
-                <img src="assets/cloudiness.png" alt="Cloudiness by Latitude" class="img-responsive side-bar-right-img">
-                <img src="assets/windyness.png" alt="Windyness by Latitude" class="img-responsive side-bar-left-img">
-                <img src="assets/humidity.png" alt="Humidity by Latitude" class="img-responsive side-bar-right-img">
+                <img src="assets/temperature.png" alt="Temperature by Latitude" class="img-responsive side-bar-img">
+                <img src="assets/cloudiness.png" alt="Cloudiness by Latitude" class="img-responsive side-bar-img">
+                <img src="assets/windyness.png" alt="Windyness by Latitude" class="img-responsive side-bar-img">
+                <img src="assets/humidity.png" alt="Humidity by Latitude" class="img-responsive side-bar-img">
               </section>
           </div>
       </div>

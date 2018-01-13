@@ -39,6 +39,13 @@ h2 {
     margin: auto;
     margin-bottom: 20px;
 }
+.visualization-img {
+    margin: auto;
+}
+.active {
+    border: 2px solid #212188;
+    padding: 2px
+}
 .clearfix {
     overflow: auto;
 }

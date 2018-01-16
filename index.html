@@ -59,8 +59,15 @@
                 <div class="main-content">
                     <img src="assets/temperature.png" alt="Temperature by Latitude" id="landing-img" class="img-responsive">
                     <p>
-                        This will be a large volume of cony work! Loremum dolor sit amet consecteture a large volume of content describing my work! Lorem ipsum dolor sit amet consectetur, oftent describing my work! Lorem ipsum dolor sit amet consecteture a large volume of content describing my work! Lorem ipsum dolor sit amet consectetur, of content describing my work! L, of content describing my work! Lorem ipsum dolor sit amet consectetur, adipisici adipisicing elit. Voluptates iusto vitae iure quisquam animi itaque, optio fuga non nequit amet consecteture a large volume of content describing my work! Lorem ipsum dolor sit amet consectetur, oftent describing my work! Lorem ipsum dolor sit amet consecteture a large volume of content describing my work! Lorem ipsum dolor sit amet consectetur, of content describing my work! L, of content describing my work! Lorem ipsum dolor sit amet consectetur, adipisici adipisicing elit. Voluptates iusto vitae iure quisquam a ipsum dolor sit amet consecteture a large volume of content describing my work! Lorem ipsum dolor sit amet consectetur, oftent describing my work! Lorem ipsum dolor sit amet consecteture a large volume of content describing my work! Lorem ipsum dolor sit amet consectetur, of content describing my work! L, of content describing my work! Lorem ipsum dolor sit amet consectetur, adipisici adipisicing elit. Voluptates iusto vitae iure quisquam animi itaque, optio fuga non nequit amet consecteture a large volume of content describing my work! Lorem ipsum dolor sit amet consectetur, oftent describing my work! Lorem ipsum dolor sit amet consecteture a large volume of content describing my work! Lorem ipsum dolor sit amet consectetur, of content describing my work! L, of content describing my work! Lorem ipsum dolor sit amet consectetur, adipisici adipisicing elit. Voluptates iusto vitae iure quisquam animi itaque, optio fuga non neque culpa molestiae in sit harum deleniti perspiciatis minima erre culpa molestiae in sit harum deleniti perspiciatis minima error facere architecto.
-                    </p>
+                        This study compares a variety of weather factors - temperature, cloudiness, windyness, and humidity - against latitude (distance from the equator). The strongest trend is well known and obvious, locations closer to the equator generally have warmer temperatures, but a more detailed discussion can be found in the visualization page for each weather aspect.<br><br>
+                        To perform this analysis, I used randomly generated geocoordinates and <a href="https://github.com/wingchen/citipy">citpy</a> to identify the nearest city and it's true latitude and longitude. This was repeated and duplicates were removed until a list of 400 cities was generated. <a href="http://openweathermap.org/forecast5">OpenWeatherMap's 5 day forecast API</a> was then used to identify the weather trends for each city. Results were plotted by latitude and are shown in each visualization page.<br>
+                    </p>    
+                    <h3>Notes</h3>
+                    <ul>
+                        <li>The 5 day forcast was used to average out patterns that vary by time of day.</li>
+                        <li>Ideally historical data would be used, if available free of cost.</li>
+                        <li>All data is from the week of November 12th, 2017.</li>
+                    </ul>
                 </div>
             </section>
           </div>
@@ -69,10 +76,18 @@
                 <h1>
                     Visualizations
                 </h1>
-                <img src="assets/temperature.png" alt="Temperature by Latitude" class="img-responsive side-bar-img">
-                <img src="assets/cloudiness.png" alt="Cloudiness by Latitude" class="img-responsive side-bar-img">
-                <img src="assets/windyness.png" alt="Windyness by Latitude" class="img-responsive side-bar-img">
-                <img src="assets/humidity.png" alt="Humidity by Latitude" class="img-responsive side-bar-img">
+                <a href="temperature.html">
+                    <img src="assets/temperature.png" alt="Temperature by Latitude" class="img-responsive side-bar-img">
+                </a>
+                <a href="cloudiness.html">
+                    <img src="assets/cloudiness.png" alt="Cloudiness by Latitude" class="img-responsive side-bar-img">
+                </a>
+                <a href="windyness.html">
+                    <img src="assets/windyness.png" alt="Windyness by Latitude" class="img-responsive side-bar-img">
+                </a>
+                <a href="humidity.html">
+                    <img src="assets/humidity.png" alt="Humidity by Latitude" class="img-responsive side-bar-img">
+                </a>
               </section>
           </div>
       </div>
@@ -80,7 +95,6 @@
 </body>
 <!-- <footer></footer> -->
 <nav class="navbar navbar-default navbar-static-bottom footer">
-    <div class="container">
-    </div>
+    <div class="container"></div>
 </nav>
 </html>

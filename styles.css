@@ -23,6 +23,9 @@ h2 {
     margin-right: 30px;
     margin-bottom: 20px;
 }
+h3 {
+    color: #212188;
+}
 #landing-img {
     max-width: 50%;
     padding-right: 15px;
@@ -31,30 +34,34 @@ h2 {
 }
 .side-bar-img {
     float: left;
-    max-height: 45%;
     max-width: 45%;
+    max-height: 5%;
     margin: 5px;
+}
+.visualization-sidebar{
+    margin: auto;
 }
 .comparison {
     margin: auto;
     margin-bottom: 20px;
 }
-.visualization-img {
-    margin: auto;
-}
 .active {
     border: 2px solid #212188;
-    padding: 2px
+    padding: 2px;
+}
+#temps-active {
+    border: 2px solid #212188;
+    padding: 2px;
+    margin-bottom: 0px;
 }
 .clearfix {
     overflow: auto;
 }
 .footer {
-    /* position: fixed; */
-    margin-top: 50px;
+    margin-top: 30px;
     margin-bottom: 0px;
-    /* left:0px;
-    bottom:0px; */
+    margin-left: 0px;
+    margin-right: 0px;
     height:30px;
     width:100%;
     border-top: 5px solid maroon;
@@ -64,6 +71,10 @@ h2 {
     background-color: #212188;
     color: white;
     margin-left: 50px;
+}
+.main-viz {
+    padding-bottom: 20px;
+    margin: auto;
 }
 .main-content {
     padding: 30px;
@@ -84,11 +95,20 @@ h2 {
         border-bottom: 1px solid #212188;
         padding-bottom: 20px;
     }
+    #bottom-comp {
+        border-bottom-width: 0px;
+    }
 }
 
 @media only screen and (max-width: 600px) {
     #landing-img {
         max-width: 100%;
+    }
+    .side-bar-img {
+        float: left;
+        max-height: 45%;
+        max-width: 45%;
+        margin: 2px;
     }
 }
 
